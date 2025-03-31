@@ -1,0 +1,56 @@
+
+.case{
+top: 50%;
+left: 50%;
+
+height: 300px;
+width: 300px;
+position: relative;
+transform: translate(-50%, 50%);
+}
+.case img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75)
+}
+.caseimage{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.outlineborder{
+    top: 50%;
+    left: 50%;
+
+    height: 320px;
+    width: 320px;
+    border: 15px solid rgb(241, 159, 52);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: rotate 4s both linear;
+    animation-delay: 2s;
+    z-index: 0;
+}
+.outbor{
+    top: 50%;
+    left: 50%;
+    height: 320px;
+    width: 320px;
+    position: absolute;
+
+    border-left: 15px solid rgb(241, 159, 52);
+    border-right: 15px solid rgb(241, 159, 52);
+    transform: translate(-50%, -50%);
+    animation: rotate 4s both linear;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    100% {
+      transform: translate(-50%, -50%) rotateZ(135deg);
+    }
+  }

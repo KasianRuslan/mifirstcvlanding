@@ -1,0 +1,23 @@
+caption {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+table{
+    background-color: rgb(199, 140, 255);
+}
+th,td {
+    border: 1.5px dotted black;
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+#red{
+    background-color: brown;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}

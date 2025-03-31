@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #580a4e, #420b0b, #151547, #430952);
+    background-size: 400% 400%;
+    animation: gradientFlow 10s ease infinite;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex: 1 1 auto;
+}
+
+main div{
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.profilecard{
+    min-width: 250px;
+    min-height: 300px;
+    width: 100%;
+    height: 350px;
+    background: #0f0f0f9a;
+}
+
+.refwork{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.refwork img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.textup{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    border-top: 1px solid rgba(255, 0, 0, 0.507);
+    transform: translateY(90%);
+    transition: all .3s linear;
+}
+.refwork:hover .textup {
+    transform: translateY(80%);
+    /* background-color: rgba(0, 0, 0, 0.521); */
+}
+.refwork:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.welcometext{
+    width: 100%;
+    min-height: 100px;
+    background: #0f0f0f9a;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #0f0f0f9a;
+    flex-basis: 10vh;
+    top: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav a{
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+main>section{
+    /* background: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+
+main>section>h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ліве бокове меню */
+
+main>aside{
+    /* background: yellow; */
+    flex-basis: 20%;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background: rgba(10, 10, 20, 0.95);
+    padding: 40px 20px;
+    transition: left 0.5s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-toggle:checked+.menu-icon+.sidebar {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+/* Праве бокове */
+
+main>section+aside{
+    background: yellowgreen;
+    flex-basis: 20%;
+}
+
+
+/* Футер */
+
+
+footer{
+    background: pink;
+    flex-basis: 5vh;
+}
+
+
+/* Animation */
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

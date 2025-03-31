@@ -1,0 +1,56 @@
+.gate {
+    width: 400px;
+    height: 150px;
+    border: 1px solid black;
+    position: relative;
+    perspective: 500px;
+    background-color: white;
+    transition: background-color 1s ease-in-out;
+}
+.gate a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+}
+.block1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border: 1px solid black;
+    background: red;
+    transition: all .5s linear;
+    transform-origin: left;
+    z-index: 2;
+}
+.gate:hover .block1 {
+    transform: rotateY(45deg);
+}
+.block2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border: 1px solid black;
+    background: red;
+    transition: all .5s linear;
+    transform-origin: right;
+    z-index: 2;
+}
+.gate:hover .block2 {
+    transform: rotateY(-45deg);
+}
+.gate:hover{
+    background-color: rgb(150, 219, 241);
+}
