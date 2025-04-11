@@ -7,102 +7,194 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header id="about">
-            <div class="logo">MyPortfolio</div>
-        </header>
-        <main >
-            <aside>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-                <label for="menu-toggle" class="menu-icon">☰</label>
-                <aside class="sidebar">
+    <div id="main" class="container">
+        <section class="topsec">
+            <header>
+                <div class="name">Kasian Ruslan</div>
+                <div class="nav">
                     <nav>
                         <ul>
+                            <li><a href="#main">Головна</a></li>
+                            <li><a href="#project">Мої Роботи</a></li>
                             <li><a href="#about">Про мене</a></li>
-                            <li><a href="#projects">Проєкти</a></li>
                             <li><a href="#contact">Контакти</a></li>
                         </ul>
                     </nav>
-                </aside>
+                </div>
+            </header>
+        </section>
+        <main>
+            <aside>
+                <div class="myphoto">
+                    <img src="./myportfolio/myphoto/IMG_1971 (1).jpg" alt="myphoto">
+                </div>
+                <div class="myinfo">
+                    <h1>Мої Навички</h1>
+                    <h2>web</h2>
+                    <div class="webimg">
+                        <img src="./myportfolio/progimg/html.png" alt="htmlimg">
+                        <img src="./myportfolio/progimg/css-3.png" alt="cssimg">
+                    </div>
+                    <h2>Дизайн</h2>
+                    <div class="webimg">
+                        <img src="./myportfolio/progimg/photoshop.png" alt="psimg">
+                        <img src="./myportfolio/progimg/premiere-pro.png" alt="primg">
+                        <img src="./myportfolio/progimg/figma.png" alt="figmaimg">
+                    </div>
+                    <!-- <h2>Інше</h2>
+                                    <div class="webimg">
+                                        <img src="" alt="">
+                                    </div> -->
+                </div>
+                <div id="contact" class="myinfo">
+                    <h1>Контакти</h1>
+                    <h2>Telegram</h2>
+                    <div class="webimg">
+                        <img src="./myportfolio/progimg/telegram.png" alt="telimg">
+                    </div>
+                    <h2>Телефон</h2>
+                    <span>+38099*******</span>
+                </div>
             </aside>
             <section>
-                <br>
-                <div class="profilecard">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi earum voluptatem. Aspernatur repudiandae eligendi asperiores praesentium minus ad. Voluptate repellat natus ex fugit laboriosam adipisci eius facilis officiis dolorem?</p>
+                <div class="midwrap">
+                    <div id="about" class="biography">
+                        <h1>Про Мене</h1>
+                        <p>
+                            Мене звати Руслан Касьян. Народився 01.11.1997 у місті Суми, Україна. З самого дитинства мене тягнуло до комп'ютера та все що з ним пов'язано, ну а після знайомства з інтернетом завжди була тяга до програмування, із-за чого почав вивчати Front-End Development.
+                        </p>
+                        <hr>
+                        <img src="./myportfolio/progimg/programing.png" alt="">
+                        <hr>
+                        <p>
+                        На данний момент навчаюсь за спеціальністю Front-End Development у школі "IT STEP Academy", також маю навички роботи у Photo Shop та Adobe Premiere Pro.
+                        </p>
+                        <p>Маю вищу освіту за спеціальністю "Комп`ютерний Інжинірінг у Механіці" котру отримав у Сумському Державному Університеті (СумДУ).</p>
+                        <p class="textleft">Володію aнглійською мовою на рівні В1.</p>
+                    </div>
+                    <h1>Мої Проекти</h1>
+                    <div id="project" class="myprojects">
+                        <a href="./myportfolio/racoon/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/racoon.png" alt="racoon">
+                                <div class="textup">
+                                    <p>Racoon width rotate frame</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/pepescrol/imdex.html">
+                            <div class="refwork">
+                                <img src="./previmg/pepe.jpg" alt="pepe">
+                                <div class="textup">
+                                    <p>Pepe ScrollBar</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/semplelist/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/flashram.png" alt="flashram">
+                                <div class="textup">
+                                    <p>Flashram</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/simlegate/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/gate.png" alt="gate">
+                                <div class="textup">
+                                    <p>Simple Gate</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/simpleclock/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/clock.png" alt="clock">
+                                <div class="textup">
+                                    <p>Simple Clock</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/simplehtmltable1/index2.2.html">
+                            <div class="refwork">
+                                <img src="./previmg/table1.png" alt="table1">
+                                <div class="textup">
+                                    <p>Simple table</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/simplelanding/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/simpleland.png" alt="simpleland">
+                                <div class="textup">
+                                    <p>First simple landing</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/japan/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/japan.png" alt="japan">
+                                <div class="textup">
+                                    <p>Japan card</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./myportfolio/simple order/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/order.png" alt="order">
+                                <div class="textup">
+                                    <p>Simple Order</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a id="car" href="./myportfolio/carpage/index.html">
+                            <div class="refwork">
+                                <img src="./previmg/carpage.png" alt="carpage">
+                                <div class="textup">
+                                    <p>Car Page</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <h2>My progress</h2>
-                <div class="welcometext">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quisquam eum ipsam eligendi magni aliquid numquam, atque dignissimos cum inventore repudiandae beatae laboriosam ipsa placeat doloremque perspiciatis soluta praesentium? Natus!</p>
-                </div>
-                <a id="projects" href="myportfolio/racoon/index.html">
-                    <div class="refwork">
-                        <img src="previmg/racoon.png" alt="racoon">
-                        <div class="textup">
-                            <p>Racoon width rotate frame</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/pepescrol/imdex.html">
-                    <div class="refwork">
-                        <img src="previmg/pepe.jpg" alt="pepe">
-                        <div class="textup">
-                            <p>Pepe ScrollBar</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/semplelist/index.html">
-                    <div class="refwork">
-                        <img src="previmg/flashram.png" alt="flashram">
-                        <div class="textup">
-                            <p>Flashram</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/simlegate/index.html">
-                    <div class="refwork">
-                        <img src="previmg/gate.png" alt="gate">
-                        <div class="textup">
-                            <p>Simple Gate</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/simpleclock/">
-                    <div class="refwork">
-                        <img src="previmg/clock.png" alt="clock">
-                        <div class="textup">
-                            <p>Simple Clock</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/simplehtmltable1/index2.2.html">
-                    <div class="refwork">
-                        <img src="previmg/table1.png" alt="table1">
-                        <div class="textup">
-                            <p>Simple table</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/simplelanding/index.html">
-                    <div class="refwork">
-                        <img src="previmg/simpleland.png" alt="simpleland">
-                        <div class="textup">
-                            <p>First simple landing</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="myportfolio/japan/index.html">
-                    <div class="refwork">
-                        <img src="previmg/japan.png" alt="table2">
-                        <div class="textup">
-                            <p>Japan card</p>
-                        </div>
-                    </div>
-                </a>
-                <h2></h2>
             </section>
-            <aside>right</aside>
+            <aside>
+                <h1>Мої Інтереси</h1>
+                <div class="wraphob">
+                    <div class="hobwrap">
+                        <div class="hob">
+                            <img src="./myportfolio/progimg/computer-game.png" alt="comgameimg">
+                        </div>
+                        <p class="hobtext">Дуже люблю грати в ігри у вільний час, бо для мене ігри це місце де можна випустити пар та розслабитись.</p>
+                    </div>
+                    <hr>
+                    <div class="hobwrap">
+                        <div class="hob">
+                            <img src="./myportfolio/progimg/freestyle.png" alt="snwbrdimg">
+                        </div>
+                        <p class="hobtext">Люблю кататись на сноуборді.</p>
+                    </div>
+                    <hr>
+                    <div class="hobwrap">
+                        <div class="hob1">
+                            <img src="./myportfolio/progimg/ghost.png" alt="hgostimg">
+                            <img src="./myportfolio/progimg/anime.png" alt="animeimg">
+                        </div>
+                        <p class="hobtext">А також дуже полюбляю дивитись аніме.</p>
+                    </div>    
+                </div>
+            </aside>
         </main>
-        <footer id="contact"> boot</footer>
     </div>
+    <footer>
+        <div class="footercen">
+            <a href="https://github.com/KasianRuslan" target="_blank">
+                <div class="footimg">
+                    <img src="./myportfolio/progimg/social.png" alt="github">
+                </div>
+            </a>
+            <p>© 2025 Kasian Ruslan</p>
+            <p>Email: <a href="mailto:your@email.com">rusikkasjan@ukr.net</a></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formorder">
+        <h3>Order sushi</h3>
+        <form action="">
+            <div class="inputwindow">
+                <label for="">Ваше ім'я*</label>
+                <input required type="text" name="fname" placeholder="Ім'я">
+            </div>
+            <div class="inputwindow">
+                <label for="">Адреса доставки*</label>
+                <input required type="text" name="address" placeholder="Введіть вашу адресу">
+            </div>
+            <div class="inputwindow">
+                <label for="">Телефон*</label>
+                <input required type="tel" name="phoneinput" placeholder="" value="+380">
+            </div>
+            <div class="inputwindow">
+                <label for="">Email</label>
+                <input type="email" name="emailinput" placeholder="youremail@gmail.com">
+            </div>
+            <!-- <div class="inputwindow">
+                <label for="">Вид паличок:</label>
+                <select name="Вид паличок" id="">
+                    <option value="Звичайні">Звичайні</option>
+                    <option value="Навчальні">Навчальні</option>
+                </select>
+            </div> -->
+            <div class="inputwindow">
+                <label for="">Паличок звичайних</label>
+                <input required type="number" min="1" name="stick" placeholder="Amount">
+            </div>
+            <div class="inputwindow">
+                <label for="">Паличок навчальних</label>
+                <input type="number" min="0" name="stick" placeholder="Amount">
+            </div>
+            <div class="inputwindow">
+                <label for="">Оберіть сет:</label>
+                <select name="Вид сету" id="">
+                    <option value="Сет П'ять філадельфій">Сет П'ять філадельфій</option>
+                    <option value="Сет Каліфорнія">Сет Каліфорнія</option>
+                    <option value="Сет Святковий">Сет Святковий</option>
+                    <option value="Сет Ніндзя">Сет Ніндзя</option>
+                    <option value="Сет Дракони">Сет Дракони</option>
+                    <option value="Сет від Шефа">Сет від Шефа</option>
+                </select>
+            </div>
+            <div class="inputwindow">
+                <label for="">Чи потрібні серветки?</label>
+                <div class="row">
+                    <label for="">Так</label>
+                    <input type="radio" name="size" value="Так">
+                </div>
+                <div class="row">
+                    <label for="">Ні</label>
+                    <input required type="radio" name="size" value="Ні">
+                </div>
+            </div>
+            <div class="inputwindow">
+                <label for="">Додатковий коментар:</label>
+                <textarea name="Comment" placeholder="" id=""></textarea>
+            </div>
+            <div class="inputwindow">
+                <input type="submit" value="submit" name="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
