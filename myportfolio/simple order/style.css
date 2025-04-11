@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: rgb(219, 219, 219); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #580a4e, #420b0b, #151547, #430952);
+    background-size: 400% 400%;
+    animation: gradientFlow 10s ease infinite;
+    color: white;
+}
+
+.formorder{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    min-width: 350px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    background: #0f0f0f93;
+}
+
+
+.formorder h3{
+    text-align: center;
+    background: rgba(170, 0, 0, 0.342);
+    color:  #f5f5f5;
+    padding: 10px;
+}
+
+.formorder form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputwindow {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputwindow label{
+    font-size: 15px;
+}
+
+.inputwindow input, select, textarea {
+    height: 24px;
+    border: none;
+    padding: 2px 10px;
+    background-color: #5c5c5c;
+    border-radius: 5px;
+    outline: none;
+}
+.inputwindow input::placeholder {
+    color: #aaa;
+}
+
+.inputwindow textarea {
+    max-width: 350px;
+    min-width: 300px;
+    height: 150px;
+    max-height: 150px;
+}
+
+.inputwindow .row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.rowItem {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
