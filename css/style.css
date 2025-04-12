@@ -431,6 +431,25 @@ footer {
         text-align: center;
         }
     
+    .myphoto img{
+        display: flex;
+        object-fit: cover;
+    }
+
+    .footercen{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 5px 0 0 0;
+        gap: 0;
+    }
+    
+    .footercen>a{
+        align-self: start;
+        position: absolute;
+        padding: 5px 0 0 40px;
+    }
+    
     /* scrollbar */
 
     .myprojects{
